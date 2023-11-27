@@ -19,5 +19,88 @@
         android:textColor="#939087"
         android:textSize="34sp"
         android:textStyle="bold" />
+    
+    <EditText
+        android:id="@+id/txtdoc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="25dp"
+        android:hint="Documento"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/txtnom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="25dp"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
 
+    <EditText
+        android:id="@+id/txtpwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="25dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/txtpwdconf"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="25dp"
+        android:hint="Confirmar Contraseña"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+    
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/green"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Registrar"
+        android:textAllCaps="false"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/errorpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Contraseñas no coinciden"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        />
 </LinearLayout>

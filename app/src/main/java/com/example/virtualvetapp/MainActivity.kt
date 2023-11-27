@@ -1,7 +1,9 @@
 package com.example.virtualvetapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.example.virtualvetapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -11,5 +13,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.doc.requestFocus()
+
+        binding.btnAceptar.setOnClickListener {  }
+    }
+    fun Register(view: View){
+        val intent=Intent(this,RegisterActivity::class.java)
+        startActivity(intent)
     }
 }
