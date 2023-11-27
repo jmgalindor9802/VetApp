@@ -14,6 +14,9 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.btnReg.setOnClickListener {
+            guardar(binding)
+        }
     }
     private fun guardar(binding: ActivityRegisterBinding){
         var error= false
@@ -37,7 +40,7 @@ class RegisterActivity : AppCompatActivity() {
             binding.txtpwdconf.error="Debe confirmar la contraseña"
             return
         }
-        if(binding.txtpwd.text.toString().equals(binding.txtpwdconf.text.toString())){
+        if(!binding.txtpwd.text.toString().equals(binding.txtpwdconf.text.toString())){
             error=true
             binding.errorpwd.visibility= View.VISIBLE
             return
