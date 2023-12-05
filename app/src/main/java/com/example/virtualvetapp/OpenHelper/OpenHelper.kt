@@ -10,7 +10,7 @@ class OpenHelper(context: Context) : SQLiteOpenHelper(context,DataBase,null,1){
     override fun onCreate(db: SQLiteDatabase?) {
         val sql = "CREATE TABLE usuario(" +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT, "+
-                "dic INTEGER NOT NULL,"+
+                "doc INTEGER NOT NULL,"+
                 "nombre VARCHAR(50) NOT NULL,"+
                 "pass VARCHAR(15) NOT NULL)"
 
